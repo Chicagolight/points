@@ -1,4 +1,4 @@
-package fetch.rewards.points.business_objects;
+package fetch.rewards.points.transactions;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -15,6 +15,11 @@ public class Transaction {
     private Date timestamp;
 
     protected Transaction() {}
+
+    public Transaction(String payer, int points) {
+        this.payer = payer;
+        this.points = points;
+    }
 
     public Transaction(String payer, int points, Date timestamp) {
         this.payer = payer;

@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "b57338c1-59dd-4982-b740-c9f6f5f35926",
+		"name": "Points Spend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Spend 5000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"points\": 5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/spend",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spend"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
